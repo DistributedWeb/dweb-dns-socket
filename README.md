@@ -1,17 +1,17 @@
-# dns-socket
+# dweb-dns-socket
 
 Make custom low-level DNS requests from node with retry support.
 
 ```
-npm install dns-socket
+npm install dweb-dns-socket
 ```
 
-[![build status](https://travis-ci.org/mafintosh/dns-socket.svg?branch=master)](https://travis-ci.org/mafintosh/dns-socket)
+[![build status](https://travis-ci.org/mafintosh/dweb-dns-socket.svg?branch=master)](https://travis-ci.org/mafintosh/dweb-dns-socket)
 
 ## Usage
 
 ``` js
-var dns = require('dns-socket')
+var dns = require('dweb-dns-socket')
 var socket = dns()
 
 socket.query({
@@ -36,11 +36,11 @@ Create a new DNS socket instance. The `options` object includes:
 
 #### `socket.on('query', query, port, host)`
 
-Emitted when a dns query is received. The query is a [dns-packet](https://github.com/mafintosh/dns-packet)
+Emitted when a dns query is received. The query is a [dweb-dns-packet](https://github.com/distributedweb/dweb-dns-packet)
 
 #### `socket.on('response', response, port, host)`
 
-Emitted when a dns response is received. The response is a [dns-packet](https://github.com/mafintosh/dns-packet)
+Emitted when a dns response is received. The response is a [dweb-dns-packet](https://github.com/distributedweb/dweb-dns-packet)
 
 #### `var id = socket.query(query, port, [host], [callback])`
 

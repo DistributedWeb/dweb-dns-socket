@@ -2,7 +2,7 @@
 
 const dgram = require('dgram')
 const util = require('util')
-const packet = require('dns-packet')
+const packet = require('dweb-dns-packet')
 const events = require('events')
 
 module.exports = DNS
